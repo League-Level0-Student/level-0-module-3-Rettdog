@@ -25,7 +25,25 @@ package modulo;
 * 
 **/
 
-public class FizzBuzz {
 
+public class FizzBuzz {
+public static void main(String[] args) {
+	int value = 0;
+for(int i = 1;i <21;i++) {
+	value = i%3;
+	if(value==0) {
+		value=i%15;
+		if(value==0) {
+			System.out.println("fizzbuzz");
+		}
+		System.out.println("fizz");
+	}else if(i%5==0) {
+		System.out.println("buzz");
+	
+	}else{
+		System.out.println(i);
+	}
 }
+}}
+
 
